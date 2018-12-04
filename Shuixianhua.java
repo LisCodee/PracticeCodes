@@ -1,6 +1,11 @@
 package test;
 
 import java.util.Scanner;
+/**
+ * 判断一个整数是不是一个回文数（类似12321）
+ * @author 1376417539
+ *
+ */
 
 public class Shuixianhua {
 	public static void main(String[] args) {
@@ -18,12 +23,12 @@ public class Shuixianhua {
 		int i,j;
 		for(j = a.length-1,i = 0;i<a.length/2;i++,j--) {	//从头和尾同时开始比较，一直到中间的一个或两个数
 			if(a[i] != a[j]) {			//如果有一个不相等，则输入不是
-				System.out.println("不是一个水仙花数！");
+				System.out.println("不是一个回文数！");
 				return;
 			}
 		}			//如果结束的i值大于等于数组长度的1/2，则说明是一个水仙花数
 		if(i>=a.length/2)
-			System.out.println("是一个水仙花数。");
+			System.out.println("是一个回文数。");
 	}
 	/**
 	 * output1：
@@ -34,6 +39,6 @@ public class Shuixianhua {
 	 * output2:
 	 * 请输入一个整数：
 	 * 123321
- 	 * 是一个水仙花数。 
+ 	 * 是一个回文。 
 	 */
 }
